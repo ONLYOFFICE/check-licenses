@@ -120,6 +120,12 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - Eclipse Public License 1.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - Eclipse Public License v. 2.0
   - :who:
     :why:
@@ -157,6 +163,12 @@
     :when: 2025-10-30 13:15:23.856490200 Z
 - - :permit
   - Mozilla Public License 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:15:23.856490200 Z
+- - :permit
+  - MPL 2.0
   - :who:
     :why:
     :versions: []
