@@ -48,6 +48,12 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - BSDL
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - BSD-2-Clause
   - :who:
     :why:
@@ -175,6 +181,12 @@
     :when: 2025-10-30 13:19:27.405737700 Z
 - - :permit
   - Public Domain, per Creative Commons CC0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - Python Software Foundation License
   - :who:
     :why:
     :versions: []
