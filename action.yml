@@ -1,0 +1,54 @@
+name: "Check Licenses"
+description: "Checks project dependencies for license compliance"
+
+inputs:
+  project_license:
+    description: "Project License"
+    required: true
+  working_directory:
+    description: "Working directory"
+    required: false
+    default: "."
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install LicenseFinder
+      run: |
+        sudo gem install license_finder
+      shell: bash
+    
+    - name: Run LicenseFinder
+      run: |
+        echo "🔎 Running LicenseFinder in working directory: '${{ inputs.working_directory }}', for license: '${{ inputs.project_license }}'"
+
+        POLICY_FILE="$GITHUB_ACTION_PATH/doc/${{ inputs.project_license }}/dependency_decisions.yml"
+
+        if [ ! -f "$POLICY_FILE" ]; then
+          echo "❌ Policy-file for license '${{ inputs.project_license }}' not found."
+          exit 1
+        fi
+
+        mkdir -p "${{ inputs.working_directory }}/doc"
+
+        LOCAL_POLICY_FILE="${{ inputs.working_directory }}/doc/dependency_decisions.yml"
+
+        if [ ! -f "$LOCAL_POLICY_FILE" ]; then
+          echo "ℹ️ No local Policy-file dependency_decisions.yml found."
+
+          cp "$POLICY_FILE" "$LOCAL_POLICY_FILE"
+        else
+          echo "ℹ️ Found local Policy-file dependency_decisions.yml."
+
+          MERGED_FILE="${{ inputs.working_directory }}/doc/dependency_decisions_merged.yml"
+          yq eval-all '. as $item ireduce ([]; . + $item)' "$POLICY_FILE" "$LOCAL_POLICY_FILE" > "$MERGED_FILE"
+          mv "$MERGED_FILE" "$LOCAL_POLICY_FILE"
+        fi
+
+        echo "📝 Final Policy-file"
+        cat "$LOCAL_POLICY_FILE"
+
+        cd "${{ inputs.working_directory }}"
+
+        license_finder
+      shell: bash
