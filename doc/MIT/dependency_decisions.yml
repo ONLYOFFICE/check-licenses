@@ -1,12 +1,54 @@
 ---
 - - :permit
+  - Apache 1.1
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - Apache 2.0
   - :who:
     :why:
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - Atlassian Customer Agreement
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Atlassian Software License Agreement
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Atlassian 3.0 End User License Agreement
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - BlueOak-1.0.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Bouncy Castle Licence
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - BSD
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - BSD licence
   - :who:
     :why:
     :versions: []
@@ -36,6 +78,54 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - Common Development and Distribution License 1.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Eclipse Distribution License v. 1.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Eclipse Distribution License - v 1.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Eclipse 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - EDL 1.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Eclipse Public License v. 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - GWT Terms
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - Java HTML Tidy License
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - ISC
   - :who:
     :why:
@@ -43,6 +133,12 @@
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
   - MIT
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:15:23.856490200 Z
+- - :permit
+  - MIT-0
   - :who:
     :why:
     :versions: []
@@ -60,7 +156,19 @@
     :versions: []
     :when: 2025-10-30 13:15:23.856490200 Z
 - - :permit
+  - OpenSymphony (Apache 2)
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
   - Public Domain
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - Public Domain, per Creative Commons CC0
   - :who:
     :why:
     :versions: []
@@ -78,6 +186,24 @@
     :versions: []
     :when: 2025-10-30 13:19:27.405737700 Z
 - - :permit
+  - 'SPDX-License-Identifier: MIT'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-11-05 10:57:18.986300500 Z
+- - :permit
+  - The JSON License
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - The OpenSymphony Software License, Version 1.1
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
   - Unicode-DFS-2016
   - :who:
     :why:
@@ -85,6 +211,12 @@
     :when: 2025-10-30 13:19:27.405737700 Z
 - - :permit
   - Zlib
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - Zope Public License
   - :who:
     :why:
     :versions: []
