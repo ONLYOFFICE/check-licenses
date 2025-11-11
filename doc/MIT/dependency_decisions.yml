@@ -90,6 +90,12 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - CDDL + GPLv2 with classpath exception
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - Common Development and Distribution License 1.0
   - :who:
     :why:
@@ -127,6 +133,12 @@
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
   - Eclipse Public License v. 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - GNU Library General Public License v2.1 or later
   - :who:
     :why:
     :versions: []
@@ -241,6 +253,30 @@
     :when: 2025-10-30 13:19:27.405737700 Z
 - - :permit
   - The OpenSymphony Software License, Version 1.1
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - The Unlicense
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - 'http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - 'http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
+  - 'http://go.microsoft.com/fwlink/?LinkID=214339'
   - :who:
     :why:
     :versions: []
