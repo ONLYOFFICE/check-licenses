@@ -96,6 +96,18 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - 'CDDL 1.1'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - CDDL/GPLv2+CE
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - Common Development and Distribution License 1.0
   - :who:
     :why:
@@ -132,7 +144,19 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - Eclipse Public License v2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - Eclipse Public License v. 2.0
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - 'GPL2 w/ CPE'
   - :who:
     :why:
     :versions: []
