@@ -264,6 +264,12 @@
     :versions: []
     :when: 2025-10-30 13:19:27.405737700 Z
 - - :permit
+  - 'http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:19:27.405737700 Z
+- - :permit
   - 'http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm'
   - :who:
     :why:
