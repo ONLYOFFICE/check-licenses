@@ -18,6 +18,10 @@ This Action uses [`license_finder`](https://github.com/pivotal/LicenseFinder) to
     # The working directory where dependencies will be analyzed.
     # Optional. Default is '.'
     working_directory:
+
+    # The path to decisions-file.
+    # Optional. Default is '.check-licenses.yml'
+    policy_file:
 ```
 
 ## Examples
@@ -53,6 +57,7 @@ jobs:
         with:
           project_license: "Apache-2.0"
           working_directory: "./frontend"
+          policy_file: ./.check-licenses.yml
 ```
 
 ### Check licenses in Java project
@@ -84,7 +89,8 @@ jobs:
         with:
           project_license: "MIT"
           working_directory: "./backend"
+          policy_file: ./.check-licenses.yml
 ```
 
 > [!IMPORTANT]
-> If you want to add exceptions to the standard license policies, add them to the file doc/dependency_decisions.yml.
+> If you want to add exceptions to the standard license policies, add them to the file .check-licenses.yml or doc/dependency_decisions.yml.

@@ -9,6 +9,10 @@ inputs:
     description: "Working directory"
     required: false
     default: "."
+  policy_file:
+    description: "Path to the LicenseFinder policy file"
+    required: false
+    default: ".check-licenses.yml"
 
 runs:
   using: "composite"
@@ -23,31 +27,39 @@ runs:
         echo "🔎 Running LicenseFinder in working directory: '${{ inputs.working_directory }}', for license: '${{ inputs.project_license }}'"
 
         HEAD_POLICY_FILE="$GITHUB_ACTION_PATH/doc/${{ inputs.project_license }}/dependency_decisions.yml"
+        DECISIONS_FILE="./doc/dependency_decisions_$(date +%s%3N).yml"
 
         if [ ! -f "$HEAD_POLICY_FILE" ]; then
           echo "❌ Head Policy-file for license '${{ inputs.project_license }}' not found."
           exit 1
         else
-          echo "📝 Head Policy-file"
+          echo "📝 Head Policy-file: $HEAD_POLICY_FILE"
           cat "$HEAD_POLICY_FILE"
 
-          license_finder inherited_decisions add "$HEAD_POLICY_FILE"
+          license_finder inherited_decisions add "$HEAD_POLICY_FILE" --decisions_file "$DECISIONS_FILE"
         fi
 
-        LOCAL_POLICY_FILE="${{ inputs.working_directory }}/doc/dependency_decisions.yml"
+        if [[ "${{ inputs.policy_file }}" == ./* ]]; then
+          LOCAL_POLICY_FILE="${{ inputs.policy_file }}"
+        else
+          LOCAL_POLICY_FILE="${{ inputs.working_directory }}/${{ inputs.policy_file }}"
+        fi
 
-        cd "${{ inputs.working_directory }}"
+        if [ ! -f "$LOCAL_POLICY_FILE" ]; then
+          LOCAL_POLICY_FILE="${{ inputs.working_directory }}/doc/dependency_decisions.yml"
+        fi
 
         if [ ! -f "$LOCAL_POLICY_FILE" ]; then
           echo "ℹ️ No local Policy-file found."
-          
-          license_finder
         else
-          echo "ℹ️ Found local Policy-file."
-          echo "📝 Local Policy-file"
+          echo "📝 Local Policy-file: $LOCAL_POLICY_FILE"
           cat "$LOCAL_POLICY_FILE"
-          
-          license_finder --decisions-file "$LOCAL_POLICY_FILE"
+
+          license_finder inherited_decisions add "$LOCAL_POLICY_FILE" --decisions_file "$DECISIONS_FILE"
         fi
 
+        echo "📝 Final Policy-file: $DECISIONS_FILE"
+        cat "$DECISIONS_FILE"
+
+        license_finder --project-path "${{ inputs.working_directory }}" --decisions_file "$DECISIONS_FILE"
       shell: bash
