@@ -90,6 +90,12 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - CDDL+GPL License
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z  
+- - :permit
   - CDDL + GPLv2 with classpath exception
   - :who:
     :why:
@@ -107,6 +113,12 @@
     :why:
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - CPL
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z    
 - - :permit
   - Common Development and Distribution License 1.0
   - :who:
@@ -162,6 +174,24 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - GNU Lesser Public License
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - 'GNU Lesser General Public License 3.0'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
+  - 'GNU LESSER GENERAL PUBLIC LICENSE, Version 2.1'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - GNU Library General Public License v2.1 or later
   - :who:
     :why:
@@ -180,6 +210,12 @@
     :versions: []
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
+  - 'Indiana University Extreme! Lab Software License'
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:17:20.210607400 Z
+- - :permit
   - ISC
   - :who:
     :why:
@@ -187,6 +223,18 @@
     :when: 2025-10-30 13:17:20.210607400 Z
 - - :permit
   - LGPL
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:15:23.856490200 Z
+- - :permit
+  - LGPL 2.1 License
+  - :who:
+    :why:
+    :versions: []
+    :when: 2025-10-30 13:15:23.856490200 Z
+- - :permit
+  - LGPL-3.0-or-later
   - :who:
     :why:
     :versions: []
