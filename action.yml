@@ -19,7 +19,8 @@ runs:
   steps:
     - name: Install LicenseFinder
       run: |
-        sudo gem install license_finder
+        echo "$(ruby -e 'puts Gem.user_dir')/bin" >> $GITHUB_PATH
+        gem install --user-install license_finder
       shell: bash
     
     - name: Run LicenseFinder
